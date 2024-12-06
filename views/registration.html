@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div id="registrationModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="eventTitle">Event Registration</h2>
+        <form id="registrationForm" enctype="multipart/form-data">
+            <input type="hidden" name="eventType" id="eventTypeInput">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <label>Event Date</label>
+            <input type="date" name="eventDate" required>
+            <label>Upload Image</label>
+            <input type="file" name="image" accept="image/*">
+            <textarea name="message" placeholder="Additional Message (Optional)"></textarea>
+            <button type="submit">Submit Registration</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
